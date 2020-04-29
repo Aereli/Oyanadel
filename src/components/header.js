@@ -1,8 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-import Logo from "../images/logo_1.svg"
+import Logo from "../images/logo_2.svg"
 import "../styles/header.css"
 import { Navbar, Nav } from "react-bootstrap"
+import Window from "../images/green-window-SINGLE.png"
+import Resume from "../images/Eric_Oyanadel_2020.pdf"
 
 const Header = () => {
   return (
@@ -21,6 +23,9 @@ const Header = () => {
           </div>
         </div>
         <div className="right-side">
+          <div className="right-window">
+            <img id="window" src={Window}></img>
+          </div>
           <Navbar expand="sm" className="justify-content-end">
             <Navbar.Toggle
               aria-controls="basic-navbar-nav"
@@ -30,19 +35,33 @@ const Header = () => {
               id="basic-navbar-nav"
               className="justify-content-end"
             >
-              <Nav.Link href="#home">Contact</Nav.Link>
+              <Nav.Link href="#">Contact</Nav.Link>
               <Nav.Link href="#link">About</Nav.Link>
             </Navbar.Collapse>
           </Navbar>
           <div className="right-side-buttons">
             <button className="button">
-              <Link>Github</Link>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/eric-oyanadel/"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
             </button>
             <button className="button">
-              <Link>LinkedIn</Link>
+              <a
+                target="_blank"
+                href="https://github.com/Aereli"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
             </button>
             <button className="button">
-              <Link>Resume</Link>
+              <a href={Resume} download>
+                Resume
+              </a>
             </button>
           </div>
         </div>
