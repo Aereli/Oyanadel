@@ -1,31 +1,44 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+import "../styles/single.css"
 
 const Single = props => {
   console.log("this is props", props)
+  const Image = useStaticQuery(graphql`
+    {
+      allFile(
+        filter: {
+          extension: { regex: "/(jpg)|(jpeg)|(png)/" }
+          relativeDirectory: { eq: "projects" }
+        }
+      ) {
+        edges {
+          node {
+            id
+            name
+            birthTime
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+  // console.log(Image.allFile.edges.node.childImageSharp.fluid)
   return (
     <>
-      <div>
-        <h1> this is the project componenet</h1>
+      <div className="project-container">
+        {Image.allFile.edges.map(d => (
+          <div>
+            <Img id="image" fluid={d.node.childImageSharp.fluid}></Img>
+          </div>
+        ))}
       </div>
     </>
   )
 }
 export default Single
-
-// const Lithography = () => {
-//   const data = useStaticQuery(graphql`
-//     query {
-//       lithoImage: file(relativePath: { eq: "litho-plate.jpg" }) {
-//         childImageSharp {
-//           fluid(maxWidth: 150) {
-//             aspectRatio
-//             ...GatsbyImageSharpFluid
-//           }
-//         }
-//       }
-//     }
-//   `)
-//   return <Img fluid={data.lithoImage.childImageSharp.fluid} alt="lithograph" />
-// }
-
-// export default Lithography

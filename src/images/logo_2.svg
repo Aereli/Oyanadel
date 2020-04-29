@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="374.269" height="269" viewBox="0 0 374.269 269">
+  <g id="Group_4" data-name="Group 4" transform="translate(-1290.632 -406)">
+    <g id="Rectangle_10" data-name="Rectangle 10" transform="translate(1384 406)" fill="#e0d6cc" stroke="#c57741" stroke-width="2">
+      <rect width="269" height="269" rx="134.5" stroke="none"/>
+      <rect x="1" y="1" width="267" height="267" rx="133.5" fill="none"/>
+    </g>
+    <text id="Oyanadel" transform="translate(1428 614)" fill="#192231" font-size="48" font-family="Skia"><tspan x="0" y="0">Oyanadel</tspan></text>
+    <text id="Eric" transform="translate(1414 491)" fill="#192231" font-size="48" font-family="Skia"><tspan x="0" y="0">Eric</tspan></text>
+    <path id="Shape_1" data-name="Shape 1" d="M676,450c-90-192-145.191-127.294-269-32-112.441,86.544-96.532-32.362-22-61-5.129-31.66,27.182-36.54,28-36.254-1.062-2.037-39.794-3-45,35.254-81,3-102.933,157.224,47,71,53.766-30.92,188-129,262,25" transform="translate(987 154)" fill="#192231" stroke="#c57741" stroke-width="2"/>
+  </g>
+</svg>
