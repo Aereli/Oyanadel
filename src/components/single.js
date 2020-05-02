@@ -1,10 +1,12 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import "../styles/single.css"
+import "../styles/projects.css"
 
-const Single = props => {
-  console.log("this is props", props)
+const Single = ({ ...props }) => {
+  console.log(props.value.allProjectsJson)
+  const Json = props.value.allProjectsJson
+
   const Image = useStaticQuery(graphql`
     {
       allFile(
@@ -26,15 +28,59 @@ const Single = props => {
           }
         }
       }
+
+      query: allProjectsJson {
+        edges {
+          node {
+            title
+            sub
+            slug
+            url
+            description
+            image {
+              src {
+                id
+              }
+            }
+          }
+        }
+      }
+
+      allImageContent: allImageSharp {
+        edges {
+          node {
+            fluid(maxWidth: 300) {
+              originalName
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
     }
   `)
-  // console.log(Image.allFile.edges.node.childImageSharp.fluid)
+  console.log("query:", Image.query)
+  console.log("images:", Image.allImageContent)
+
   return (
     <>
       <div className="project-container">
         {Image.allFile.edges.map(d => (
-          <div>
-            <Img id="image" fluid={d.node.childImageSharp.fluid}></Img>
+          <div className="image">
+            <div className="inner-image">
+              {Image.query.edges.map(
+                data => (
+                  console.log("inside", data),
+                  (<p className="inner-text">{data.node.title} </p>)
+                )
+              )}
+              {/* {console.log(d.node)} */}
+              <p className="inner-text">{Json.title}this is some text</p>
+            </div>
+            <Img
+              key={d.node.id}
+              fluid={d.node.childImageSharp.fluid}
+              alt="project"
+            ></Img>
           </div>
         ))}
       </div>

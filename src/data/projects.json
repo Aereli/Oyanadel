@@ -1,0 +1,26 @@
+[
+  {
+    "title": "ShipSip",
+    "sub": "React, API's, Ruby on Rails",
+    "slug": "Package Shipping Website",
+    "url": "https://wyn-shipship.herokuapp.com/",
+    "image": {
+      "src": "./images/shipship.png"
+    },
+    "description": "Site built to group together the main Packages services to find best deal",
+    "tech": "ReactJs, JavaScript, ReactScroll, ReactSpring, Ruby on Rails, Devise gem, Formspree",
+    "github": "https://github.com/Aereli/ShipShip"
+  },
+  {
+    "title": "Barhop",
+    "sub": "ReactJS, HTML, CSS",
+    "slug": "Bar Listing Website",
+    "url": "http://barhop-wyncode.herokuapp.com/",
+    "image": {
+      "src": "./images/barhop.png"
+    },
+    "description": "Site built to provide users with location and details on nearest bars, using the yelp API",
+    "tech": "ReactJs, Yelp API, HTML, CSS",
+    "github": "https://github.com/Aereli/Bar_hop_final"
+  }
+]

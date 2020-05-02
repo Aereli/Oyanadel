@@ -24,7 +24,7 @@ const Header = () => {
         </div>
         <div className="right-side">
           <div className="right-window">
-            <img id="window" src={Window}></img>
+            <img id="window" src={Window} alt="window"></img>
           </div>
           <Navbar expand="sm" className="justify-content-end">
             <Navbar.Toggle
