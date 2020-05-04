@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <>
       <div className="header-container">
-        <div className="left-side">
+        {/* <div className="left-side">
           <div className="logo">
             <Link to="/">
               <img id="logo" src={Logo} alt="logo"></img>
@@ -21,7 +21,7 @@ const Header = () => {
             <p>Full Stack Web Developer </p>
             <p>From Miami, Florida</p>
           </div>
-        </div>
+        </div> */}
         <div className="right-side">
           <div className="right-window">
             <img id="window" src={Window} alt="window"></img>

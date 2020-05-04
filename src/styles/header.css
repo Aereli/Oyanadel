@@ -5,6 +5,8 @@ p {
 .header-container {
   display: flex;
   width: 100vw;
+  justify-content: center;
+  background-color: #192231;
 }
 
 .left-side {
