@@ -13,9 +13,12 @@ const Projects = () => {
             slug
             url
             description
+            github
             image {
-              src {
-                id
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
               }
             }
           }
@@ -23,15 +26,35 @@ const Projects = () => {
       }
     }
   `)
-  console.log("this is data", Info)
+  const projects = Info.allProjectsJson.edges
+
   return (
     <div
       style={{
         backgroundImage: `linear-gradient(to  right, #e0d6cc 50%, #192231 50%)`,
       }}
     >
+      {projects.map(({ node: data }, id) => {
+        const title = data.title
+        const sub = data.sub
+        const description = data.description
+        const image = data.image.childImageSharp.fluid
+        const github = data.github
+        const url = data.url
+        return (
+          <Single
+            key={id}
+            title={title}
+            sub={sub}
+            description={description}
+            image={image}
+            github={github}
+            url={url}
+          />
+        )
+      })}
+
       <div></div>
-      <Single value={Info} />
     </div>
   )
 }
