@@ -1,23 +1,39 @@
 .project-container {
-  margin: 0 15vw;
+  position: relative;
+  background-image: url("../images/green-window-BACKGROUND.png");
+}
+.project-margin {
+  position: relative;
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
-  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 2rem;
+  grid-template-areas: "left" "right";
+  margin: 0 15vw;
+  background-color: #192231;
+  overflow: hidden;
+}
+
+.indivdual-project-container {
+  overflow: hidden;
+  grid-gap: 3rem;
 }
 
 .image {
   position: relative;
   text-align: center;
-  background-color: white;
+  background-image: url("../images/green-window-BACKGROUND.png");
+  background-size: auto;
   border: 1px solid #c57741;
   box-shadow: 0px 0px 18px 0px #000000;
   margin: 2rem;
+  overflow: hidden;
 }
 
 .inner-image {
   position: absolute;
   left: 25%;
   padding: 0.5rem;
+  overflow: hidden;
 }
 
 .gatsby-image-wrapper {
