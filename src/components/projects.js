@@ -32,25 +32,27 @@ const Projects = () => {
   return (
     <div className="project-container">
       <div className="project-margin">
-        {projects.map(({ node: data }, id) => {
-          const title = data.title
-          const sub = data.sub
-          const description = data.description
-          const image = data.image.childImageSharp.fluid
-          const github = data.github
-          const url = data.url
-          return (
-            <Single
-              key={id}
-              title={title}
-              sub={sub}
-              description={description}
-              image={image}
-              github={github}
-              url={url}
-            />
-          )
-        })}
+        <div className="project-middle">
+          {projects.map(({ node: data }, id) => {
+            const title = data.title
+            const sub = data.sub
+            const description = data.description
+            const image = data.image.childImageSharp.fluid
+            const github = data.github
+            const url = data.url
+            return (
+              <Single
+                key={id}
+                title={title}
+                sub={sub}
+                description={description}
+                image={image}
+                github={github}
+                url={url}
+              />
+            )
+          })}
+        </div>
       </div>
     </div>
   )

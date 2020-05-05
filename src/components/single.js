@@ -7,15 +7,22 @@ const Single = ({ image, title, url, description, sub, id, github }) => {
   return (
     <>
       <div className="indivdual-project-container">
-        <div className="image">
-          <div className="inner-image">
-            <p className="inner-text">{title}</p>
-            <p>{sub}</p>
+        {/* <div className="image"></div> */}
+        <Img key={id} fluid={image}></Img>
+        <div className="inner-image">
+          <p id="title">{title}</p>
+          <p id="main-desc">{sub}</p>
+          <div id="desc">
             <p>{description}</p>
-            <a>url {url}</a>
-            <a>github {github}</a>
           </div>
-          <Img key={id} fluid={image}></Img>
+          <div id="links">
+            <button>
+              <a href={github}>github</a>
+            </button>
+            <button>
+              <a href={url}>check out site</a>
+            </button>
+          </div>
         </div>
       </div>
     </>
