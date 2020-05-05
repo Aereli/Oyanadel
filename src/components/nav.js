@@ -2,16 +2,17 @@ import React from "react"
 
 const Nav = () => {
   return (
-    <div
-      style={{
-        height: `25vh`,
-        width: `35vw`,
-        // justifyContent: `right`,
-        backgroundColor: `white`,
-      }}
-    >
-      <h1>nav box</h1>
-      <div></div>
+    <div>
+      <div className="logo">
+        <Link to="/">
+          <img id="logo" src={Logo} alt="logo"></img>
+        </Link>
+      </div>
+      {/* <div className="header-text">
+          <div id="header-circle"></div>
+          <p>Full Stack Web Developer </p>
+          <p>From Miami, Florida</p>
+        </div> */}
     </div>
   )
 }
