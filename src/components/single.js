@@ -16,10 +16,10 @@ const Single = ({ image, title, url, description, sub, id, github }) => {
             <p>{description}</p>
           </div>
           <div id="links">
-            <button>
+            <button className="button">
               <a href={github}>github</a>
             </button>
-            <button>
+            <button className="button">
               <a href={url}>check out site</a>
             </button>
           </div>
