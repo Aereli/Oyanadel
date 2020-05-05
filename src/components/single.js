@@ -7,7 +7,7 @@ const Single = ({ image, title, url, description, sub, id, github }) => {
   return (
     <>
       <div className="indivdual-project-container">
-        {/* <div className="image"></div> */}
+        <div className="line"></div>
         <Img key={id} fluid={image}></Img>
         <div className="inner-image">
           <p id="title">{title}</p>
@@ -24,6 +24,7 @@ const Single = ({ image, title, url, description, sub, id, github }) => {
             </button>
           </div>
         </div>
+        <div className="line"></div>
       </div>
     </>
   )

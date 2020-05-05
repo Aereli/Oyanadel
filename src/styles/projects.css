@@ -45,9 +45,7 @@
   bottom: 0;
   left: 0;
   background-image: url("../images/green-window-BACKGROUND.png");
-  background-size: fill;
-  object-fit: fill;
-  overflow: hidden;
+  /* overflow: hidden; */
   color: #192231;
   height: 100%;
   opacity: 0;
@@ -100,4 +98,10 @@
 .button a:hover {
   color: #192231;
   text-decoration: none;
+}
+
+.line {
+  background-color: #e0d6cc;
+  height: 1px;
+  margin: 2rem;
 }
