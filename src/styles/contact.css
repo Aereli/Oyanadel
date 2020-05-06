@@ -1,0 +1,99 @@
+.contact-background {
+  background-color: #192231;
+  height: 100vh;
+}
+
+#contact-image {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+
+.contact-nav {
+  display: flex;
+  justify-content: space-between;
+}
+#home-link {
+  margin: 2rem;
+  font-size: 1.5rem;
+  font-family: skia;
+  color: #985e6d;
+  text-decoration: none;
+}
+
+#home-link:hover {
+  text-decoration: none;
+  color: #e0d6cc;
+}
+.contact-title {
+  text-align: center;
+  color: #985e6d;
+}
+
+.contact-form {
+  text-align: center;
+  font-size: 1rem;
+  font-family: "skia", sans-serif;
+}
+
+.contact-form label {
+  font-family: "skia", sans-serif;
+  color: #985e6d;
+}
+
+.contact-form input {
+  border: solid 1px #985e6d;
+  outline: none;
+  width: 300px;
+  text-indent: 0.5rem;
+  font-size: 1rem;
+  font-family: "skia", sans-serif;
+}
+
+.contact-form textarea {
+  outline: none;
+  border: solid 1px #985e6d;
+  width: 400px;
+  height: 100px;
+  text-indent: 0.5rem;
+  font-size: 1rem;
+  font-family: "skia", sans-serif;
+}
+
+@media (max-width: 415px) {
+  .contact-form textarea {
+    width: 300px;
+  }
+}
+
+.contact-form button {
+  border: solid 1px #985e6d;
+  color: #985e6d;
+  font-weight: 700;
+  font-size: 1rem;
+  outline: none;
+  width: 70px;
+  cursor: pointer;
+  font-family: "skia", sans-serif;
+}
+
+/* ********************************** */
+/* THANK YOU SECTION */
+
+#thanks-header {
+  padding-top: 10rem;
+  text-align: center;
+  color: #985e6d;
+}
+
+#thanks-btn {
+  margin-top: 3rem;
+  border: solid 1px #985e6d;
+  color: #985e6d;
+  font-weight: 700;
+  font-size: 1rem;
+  outline: none;
+  width: 70px;
+  cursor: pointer;
+  font-family: "skia", sans-serif;
+}

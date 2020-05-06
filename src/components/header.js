@@ -9,24 +9,22 @@ const Header = () => {
   return (
     <>
       <div className="header-container">
+        <div className="nav-container">
+          <Navigation />
+          <Navbar expand="sm" className="justify-content-end">
+            <Navbar.Toggle
+              aria-controls="basic-navbar-nav"
+              className="justify-content-end"
+            />
+            <Navbar.Collapse
+              id="basic-navbar-nav"
+              className="justify-content-end"
+            >
+              <Nav.Link href="/contact">Contact</Nav.Link>
+            </Navbar.Collapse>
+          </Navbar>
+        </div>
         <div className="right-side">
-          <div className="nav-container">
-            <Navigation />
-            <Navbar expand="sm" className="justify-content-end">
-              <Navbar.Toggle
-                aria-controls="basic-navbar-nav"
-                className="justify-content-end"
-              />
-              <Navbar.Collapse
-                id="basic-navbar-nav"
-                className="justify-content-end"
-              >
-                <Nav.Link href="/contact">Contact</Nav.Link>
-                <Nav.Link href="#link">About</Nav.Link>
-              </Navbar.Collapse>
-            </Navbar>
-          </div>
-
           <div className="header-text">
             <p>Full Stack Web Developer </p>
             <p>From Miami, Florida</p>

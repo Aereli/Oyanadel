@@ -26,6 +26,8 @@
 .indivdual-project-container {
   position: relative;
   cursor: pointer;
+  height: 300px;
+  overflow: hidden;
 }
 
 @media (max-width: 500px) {
@@ -72,10 +74,6 @@
   cursor: pointer;
   display: flex;
   justify-content: space-around;
-}
-.gatsby-image-wrapper {
-  height: 300px;
-  border: 1px solid #985e6d;
 }
 
 .button {
