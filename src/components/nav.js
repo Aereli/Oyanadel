@@ -1,6 +1,8 @@
 import React from "react"
+import { Link } from "gatsby"
+import Logo from "../images/logo_2.svg"
 
-const Nav = () => {
+const Navigation = () => {
   return (
     <div>
       <div className="logo">
@@ -8,13 +10,8 @@ const Nav = () => {
           <img id="logo" src={Logo} alt="logo"></img>
         </Link>
       </div>
-      {/* <div className="header-text">
-          <div id="header-circle"></div>
-          <p>Full Stack Web Developer </p>
-          <p>From Miami, Florida</p>
-        </div> */}
     </div>
   )
 }
 
-export default Nav
+export default Navigation

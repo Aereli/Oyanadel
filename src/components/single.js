@@ -17,12 +17,12 @@ const Single = ({ image, title, url, description, sub, id, github }) => {
           </div>
           <div id="links">
             <button className="button">
-              <a href={github} target="_blank">
+              <a href={github} target="_blank" rel="noopener noreferrer">
                 View Github
               </a>
             </button>
             <button className="button">
-              <a href={url} target="_blank">
+              <a href={url} target="_blank" rel="noopener noreferrer">
                 View The Site
               </a>
             </button>
