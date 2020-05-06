@@ -1,17 +1,17 @@
 [
   {
     "title": "ShipSip",
-    "sub": "React, API's, Ruby on Rails",
+    "sub": "React, Shippo API, Ruby on Rails",
     "slug": "Package Shipping Website",
     "url": "https://wyn-shipship.herokuapp.com/",
     "image": "./images/shipship.png",
-    "description": "Site built to group together the main Packages services to find best deal",
-    "tech": "ReactJs, JavaScript, ReactScroll, ReactSpring, Ruby on Rails, Devise gem, Formspree",
+    "description": "This Full Stack site groups different packaging services like UPS, FEDEX and USPS and provides full packaging labels and information.",
+    "tech": "ReactJs, JavaScript, ReactScroll, ReactSpring, Ruby on Rails, Devise Gem, Formspree",
     "github": "https://github.com/Aereli/ShipShip"
   },
   {
     "title": "Barhop",
-    "sub": "ReactJS, HTML, CSS",
+    "sub": "ReactJS, HTML, CSS, Yelp API",
     "slug": "Bar Listing Website",
     "url": "http://barhop-wyncode.herokuapp.com/",
     "image": "./images/barhop.png",
@@ -21,32 +21,32 @@
   },
   {
     "title": "Covid-19",
-    "sub": "ReactJS, HTML, CSS",
-    "slug": "Bar Listing Website",
-    "url": "http://barhop-wyncode.herokuapp.com/",
+    "sub": "NextJs, CSS, API",
+    "slug": "Covid Virus Information",
+    "url": "https://wonderful-agnesi-d186b6.netlify.app/",
     "image": "./images/covid-19.png",
-    "description": "Site built to provide users with location and details on nearest bars, using the yelp API",
-    "tech": "ReactJs, Yelp API, HTML, CSS",
-    "github": "https://github.com/Aereli/Bar_hop_final"
+    "description": "Using an API I found From Mathdroid i was able to build a simple covid fact page displaying information from different regions",
+    "tech": "NextJs, MathDroid API",
+    "github": "https://github.com/Aereli/covid-19-facts"
   },
   {
     "title": "aereli Art",
-    "sub": "ReactJS, HTML, CSS",
-    "slug": "Bar Listing Website",
-    "url": "http://barhop-wyncode.herokuapp.com/",
+    "sub": "Gatsby, React, Graphql, ",
+    "slug": "Art Page",
+    "url": "http://aereli.com",
     "image": "./images/aereliArt.png",
-    "description": "Site built to provide users with location and details on nearest bars, using the yelp API",
-    "tech": "ReactJs, Yelp API, HTML, CSS",
-    "github": "https://github.com/Aereli/Bar_hop_final"
+    "description": "Personal artwork queried from datasource using Graphql built on a Gatsby framework to load images a lighting fast speed, using lazy load.",
+    "tech": "React, Gatsby, Graphql",
+    "github": "https://github.com/Aereli/AereliArt"
   },
   {
     "title": "splttr",
-    "sub": "ReactJS, HTML, CSS",
-    "slug": "Bar Listing Website",
-    "url": "http://barhop-wyncode.herokuapp.com/",
+    "sub": "Vanilla JS, HTML, CSS",
+    "slug": "Tip Calculator",
+    "url": "https://github.com/Aereli/Tip-Calculator",
     "image": "./images/splttr.png",
-    "description": "Site built to provide users with location and details on nearest bars, using the yelp API",
-    "tech": "ReactJs, Yelp API, HTML, CSS",
-    "github": "https://github.com/Aereli/Bar_hop_final"
+    "description": "Simple tip calculator for partys of any size using Pure Vanilla Javascript",
+    "tech": "Vanilla JS, HTML, CSS",
+    "github": "https://github.com/Aereli/Tip-Calculator"
   }
 ]
