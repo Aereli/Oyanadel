@@ -12,7 +12,7 @@ const Thanks = () => {
       file(relativePath: { eq: "staringOut.png" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }

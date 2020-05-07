@@ -1,11 +1,24 @@
 import React from "react"
 import "../styles/header.css"
 import { Navbar, Nav } from "react-bootstrap"
-import Window from "../images/green-window-SINGLE.png"
 import Resume from "../images/Eric_Oyanadel_2020.pdf"
 import Navigation from "./nav"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 const Header = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "green-window-SINGLE.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
+        }
+      }
+    }
+  `)
+  console.log(data)
   return (
     <>
       <div className="header-container">
@@ -31,7 +44,13 @@ const Header = () => {
           </div>
 
           <div className="right-window">
-            <img id="window" src={Window} alt="window"></img>
+            <div id="window">
+              <Img
+                fluid={data.file.childImageSharp.fluid}
+                alt="Me Staring Out"
+              />
+            </div>
+            {/* <img id="window" src={Window} alt="window"></img> */}
           </div>
 
           <div className="right-side-buttons">
