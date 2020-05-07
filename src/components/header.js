@@ -8,8 +8,16 @@ import Img from "gatsby-image"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "green-window-SINGLE.png" }) {
+    {
+      window: file(relativePath: { eq: "green-window-SINGLE.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
+        }
+      }
+
+      background: file(relativePath: { eq: "green-window-BACKGROUND.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_tracedSVG
@@ -18,6 +26,7 @@ const Header = () => {
       }
     }
   `)
+
   console.log(data)
   return (
     <>
@@ -46,7 +55,7 @@ const Header = () => {
           <div className="right-window">
             <div id="window">
               <Img
-                fluid={data.file.childImageSharp.fluid}
+                fluid={data.window.childImageSharp.fluid}
                 alt="Me Staring Out"
               />
             </div>
