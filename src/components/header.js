@@ -6,6 +6,8 @@ import Navigation from "./nav"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import BackgroundImage from "gatsby-background-image"
+
 const Header = () => {
   const data = useStaticQuery(graphql`
     {
@@ -20,7 +22,7 @@ const Header = () => {
       background: file(relativePath: { eq: "green-window-BACKGROUND.png" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid_tracedSVG
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
@@ -28,6 +30,8 @@ const Header = () => {
   `)
 
   console.log(data)
+  const imageData = data.background.childImageSharp.fluid
+
   return (
     <>
       <div className="header-container">
@@ -46,47 +50,49 @@ const Header = () => {
             </Navbar.Collapse>
           </Navbar>
         </div>
-        <div className="right-side">
-          <div className="header-text">
-            <p>Full Stack Web Developer </p>
-            <p>From Miami, Florida</p>
-          </div>
+        <BackgroundImage alt="background" fluid={imageData}>
+          <div className="right-side">
+            <div className="header-text">
+              <p>Full Stack Web Developer </p>
+              <p>From Miami, Florida</p>
+            </div>
 
-          <div className="right-window">
-            <div id="window">
-              <Img
-                fluid={data.window.childImageSharp.fluid}
-                alt="Me Staring Out"
-              />
+            <div className="right-window">
+              <div id="window">
+                <Img
+                  fluid={data.window.childImageSharp.fluid}
+                  alt="Me Staring Out"
+                />
+              </div>
+            </div>
+
+            <div className="right-side-buttons">
+              <button className="button">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/eric-oyanadel/"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </button>
+              <button className="button">
+                <a
+                  target="_blank"
+                  href="https://github.com/Aereli"
+                  rel="noopener noreferrer"
+                >
+                  Github
+                </a>
+              </button>
+              <button className="button">
+                <a href={Resume} download>
+                  Resume
+                </a>
+              </button>
             </div>
           </div>
-
-          <div className="right-side-buttons">
-            <button className="button">
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/eric-oyanadel/"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>
-            </button>
-            <button className="button">
-              <a
-                target="_blank"
-                href="https://github.com/Aereli"
-                rel="noopener noreferrer"
-              >
-                Github
-              </a>
-            </button>
-            <button className="button">
-              <a href={Resume} download>
-                Resume
-              </a>
-            </button>
-          </div>
-        </div>
+        </BackgroundImage>
       </div>
     </>
   )

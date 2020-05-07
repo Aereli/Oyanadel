@@ -39,7 +39,7 @@ p {
   position: relative;
   height: 100vh;
   width: 40vw;
-  background-image: url("../images/green-window-BACKGROUND.png");
+  /* background-image: url("../images/green-window-BACKGROUND.png"); */
   background-repeat: no-repeat;
   background-size: cover;
 }
