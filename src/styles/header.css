@@ -85,14 +85,15 @@ p {
 }
 
 .nav-link {
-  /* display: flex; */
   position: relative;
-  /* justify-content: flex-end; */
   font-size: 1.5rem;
   font-family: skia;
   color: #e0d6cc;
-  /* margin-top: 2rem; */
   text-align: end;
+}
+
+.nav-link:hover {
+  color: #985e6d;
 }
 
 .navbar-light .navbar-toggler {

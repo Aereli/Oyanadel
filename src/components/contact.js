@@ -28,8 +28,8 @@ const ContactForm = () => {
         </div>
         <div>
           <h3 className="contact-title">Send me a message!</h3>
+          <div id="contact-line"></div>
         </div>
-
         <div className="contact-form">
           <form
             name="contact"

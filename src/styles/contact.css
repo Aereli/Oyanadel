@@ -19,20 +19,29 @@
   margin: 2rem;
   font-size: 1.5rem;
   font-family: skia;
-  color: #985e6d;
+  color: #e0d6cc;
   text-decoration: none;
 }
 
 #home-link:hover {
   text-decoration: none;
-  color: #e0d6cc;
+  color: #985e6d;
 }
 .contact-title {
+  font-family: skia;
   text-align: center;
   color: #985e6d;
 }
 
+#contact-line {
+  justify-content: center;
+  background-color: #985e6d;
+  width: 5rem;
+  height: 1px;
+}
+
 .contact-form {
+  font-family: skia;
   position: relative;
   z-index: 3;
   text-align: center;

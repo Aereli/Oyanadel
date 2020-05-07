@@ -50,7 +50,6 @@ const Header = () => {
                 alt="Me Staring Out"
               />
             </div>
-            {/* <img id="window" src={Window} alt="window"></img> */}
           </div>
 
           <div className="right-side-buttons">
