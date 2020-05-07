@@ -4,9 +4,11 @@
 }
 
 #contact-image {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100vw;
+  /* transform: translateY(-100%); */
+  z-index: 0;
 }
 
 .contact-nav {
@@ -31,6 +33,8 @@
 }
 
 .contact-form {
+  position: relative;
+  z-index: 3;
   text-align: center;
   font-size: 1rem;
   font-family: "skia", sans-serif;
