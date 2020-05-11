@@ -2,6 +2,9 @@ This Repository represents the Portfolio site of Eric Oyanadel, created with Gat
 
 Domain: Oyanadel.com
 
+#Project run
+`gatsby Build, Gatsby Develop`
+
 ## gatsby configs
 
 - gatsby-transformer-sharp
