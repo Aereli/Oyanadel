@@ -15,6 +15,7 @@ const Projects = () => {
             url
             description
             github
+            video
             image {
               childImageSharp {
                 fluid {
@@ -40,6 +41,7 @@ const Projects = () => {
             const image = data.image.childImageSharp.fluid
             const github = data.github
             const url = data.url
+            const video = data.video
             return (
               <Single
                 key={id}
@@ -49,6 +51,7 @@ const Projects = () => {
                 image={image}
                 github={github}
                 url={url}
+                video={video}
               />
             )
           })}

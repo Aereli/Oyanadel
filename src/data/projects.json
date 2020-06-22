@@ -17,7 +17,8 @@
     "image": "./images/barhop.png",
     "description": "Site built to provide users with location and details on nearest bars, using the yelp API",
     "tech": "ReactJs, Yelp API, HTML, CSS",
-    "github": "https://github.com/Aereli/Bar_hop_final"
+    "github": "https://github.com/Aereli/Bar_hop_final",
+    "video": "https://res.cloudinary.com/aereli/video/upload/v1592856169/OyanadelPage/barhop.mov"
   },
   {
     "title": "Covid-19",
