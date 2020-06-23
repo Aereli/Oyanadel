@@ -7,7 +7,8 @@
     "image": "./images/shipship.png",
     "description": "This Full Stack site groups different packaging services like UPS, FEDEX and USPS and provides full packaging labels and information.",
     "tech": "ReactJs, JavaScript, ReactScroll, ReactSpring, Ruby on Rails, Devise Gem, Formspree",
-    "github": "https://github.com/Aereli/ShipShip"
+    "github": "https://github.com/Aereli/ShipShip",
+    "video": "https://res.cloudinary.com/aereli/video/upload/v1592939829/OyanadelPage/Aereli.mov"
   },
   {
     "title": "Barhop",
@@ -28,7 +29,8 @@
     "image": "./images/covid-19.png",
     "description": "Using an API I found From Mathdroid i was able to build a simple covid fact page displaying information from different regions",
     "tech": "NextJs, MathDroid API",
-    "github": "https://github.com/Aereli/covid-19-facts"
+    "github": "https://github.com/Aereli/covid-19-facts",
+    "video": "https://res.cloudinary.com/aereli/video/upload/v1592939613/OyanadelPage/covid19.mov"
   },
   {
     "title": "aereli Art",
@@ -38,16 +40,18 @@
     "image": "./images/aereliArt.png",
     "description": "Personal artwork queried from datasource using Graphql built on a Gatsby framework to load images a lighting fast speed, using lazy load.",
     "tech": "React, Gatsby, Graphql",
-    "github": "https://github.com/Aereli/AereliArt"
+    "github": "https://github.com/Aereli/AereliArt",
+    "video": "https://res.cloudinary.com/aereli/video/upload/v1592939829/OyanadelPage/Aereli.mov"
   },
   {
     "title": "splttr",
     "sub": "Vanilla JS, HTML, CSS",
     "slug": "Tip Calculator",
-    "url": "https://github.com/Aereli/Tip-Calculator",
+    "url": "https://aereli.github.io/Tip-Calculator/",
     "image": "./images/splttr.png",
     "description": "Simple tip calculator for partys of any size using Pure Vanilla Javascript",
     "tech": "Vanilla JS, HTML, CSS",
-    "github": "https://github.com/Aereli/Tip-Calculator"
+    "github": "https://github.com/Aereli/Tip-Calculator",
+    "video": "https://res.cloudinary.com/aereli/video/upload/v1592939522/OyanadelPage/splttr.mov"
   }
 ]
