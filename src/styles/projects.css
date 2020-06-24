@@ -84,18 +84,21 @@
   border-radius: 5px;
   padding: 1px 3px 1px 3px;
   text-decoration: none;
+  color: #565b46;
 }
 
 .button a {
   text-decoration: none;
   outline: none;
   color: #565b46;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: skia;
+  transition: 0.2s ease-in-out;
 }
-.button a:hover {
+.button:hover {
   color: #192231;
   text-decoration: none;
+  transform: scale(1.1);
 }
 
 .line {

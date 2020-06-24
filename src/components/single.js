@@ -37,8 +37,7 @@ const Single = ({ image, title, url, description, sub, id, github, video }) => {
                 View The Site
               </a>
             </button>
-
-            <button type="button" onClick={handleOpen}>
+            <button className="button" onClick={handleOpen}>
               Preview
             </button>
             <Modal
