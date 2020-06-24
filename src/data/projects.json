@@ -53,5 +53,16 @@
     "tech": "Vanilla JS, HTML, CSS",
     "github": "https://github.com/Aereli/Tip-Calculator",
     "video": "https://res.cloudinary.com/aereli/video/upload/v1592939522/OyanadelPage/splttr.mov"
+  },
+  {
+    "title": "Wyn-Generator",
+    "sub": "React, Javascript, HTML, CSS",
+    "slug": "Student Generator",
+    "url": "https://wyn-generator.netlify.app/",
+    "image": "./images/generator.png",
+    "description": "Selects a random student from the wyncode cohort36 Api.",
+    "tech": "React, Javascript, HTML, CSS",
+    "github": "https://github.com/Aereli/Tip-Calculator",
+    "video": "https://res.cloudinary.com/aereli/video/upload/v1593023027/OyanadelPage/wyn-generator.mov"
   }
 ]
