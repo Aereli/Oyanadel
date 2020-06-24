@@ -1,14 +1,14 @@
 [
   {
     "title": "ShipSip",
-    "sub": "React, Shippo API, Ruby on Rails",
+    "sub": "ReactJs, Shippo API, Ruby on Rails, MySql, Devise gem, CSS",
     "slug": "Package Shipping Website",
     "url": "https://wyn-shipship.herokuapp.com/",
     "image": "./images/shipship.png",
     "description": "This Full Stack site groups different packaging services like UPS, FEDEX and USPS and provides full packaging labels and information.",
     "tech": "ReactJs, JavaScript, ReactScroll, ReactSpring, Ruby on Rails, Devise Gem, Formspree",
     "github": "https://github.com/Aereli/ShipShip",
-    "video": "https://res.cloudinary.com/aereli/video/upload/v1592939829/OyanadelPage/Aereli.mov"
+    "video": "https://res.cloudinary.com/aereli/video/upload/v1592939491/OyanadelPage/shipship.mov"
   },
   {
     "title": "Barhop",
