@@ -9,7 +9,6 @@ const Footer = () => {
         backgroundColor: `#192231`,
         color: `#E0D6CC`,
         paddingBottom: `1rem`,
-        // margin: `2rem`,
         textAlign: `center`,
         fontFamily: `skia`,
       }}
