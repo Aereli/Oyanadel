@@ -11,9 +11,10 @@ const Footer = () => {
         paddingBottom: `1rem`,
         // margin: `2rem`,
         textAlign: `center`,
+        fontFamily: `skia`,
       }}
     >
-      © {new Date().getFullYear()}, Built from Scratch with Gatsby
+      © {new Date().getFullYear()}, Built from Scratch using Gatsby
     </div>
   )
 }
