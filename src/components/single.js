@@ -54,13 +54,14 @@ const Single = ({ image, title, url, description, sub, id, github, video }) => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                outline: 0,
               }}
             >
               <video
                 autoPlay
                 track="barhop video"
                 style={{
-                  width: "100%",
+                  width: "80%",
                   objectFit: "contain",
                 }}
               >
