@@ -36,19 +36,19 @@ function SEO({ description, lang, meta, title }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
-          name: `description`,
+          name: `Eric Oyanadel`,
           content: metaDescription,
         },
         {
-          property: `og:title`,
+          property: `Eric Oyanadel`,
           content: title,
         },
         {
-          property: `og:description`,
+          property: `Portfolio page of Eric Oyanadel`,
           content: metaDescription,
         },
         {
-          property: `og:type`,
+          property: `Eric Oyanadel`,
           content: `website`,
         },
         {
